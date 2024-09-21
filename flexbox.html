@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+  </head>
+  <body style="height: 200vh">
+    <div style="display: flex; flex-direction: row">
+      <div style="background-color: lightcoral">box1</div>
+      <div style="background-color: dodgerblue">box1</div>
+    </div>
+
+    <div style="margin-top: 10px; display: flex; flex-direction: row">
+      <div style="background-color: lightcoral; width: 100px">100px</div>
+      <div style="background-color: dodgerblue; flex: 1">flex 1</div>
+      <div style="background-color: rgb(170, 228, 150); flex: 2">flex 2</div>
+    </div>
+
+    <div
+      style="
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+        height: 70px;
+        justify-content: center; /* center end start */
+      "
+    >
+      <div style="background-color: dodgerblue; width: 100px">100px</div>
+      <div style="background-color: lightcoral; width: 100px">100px</div>
+      <div style="background-color: rgb(170, 228, 150); width: 100px">
+        100px
+      </div>
+    </div>
+
+
+    <div
+      style="
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+        height: 70px;
+        justify-content: space-between; /* center end start */
+      "
+    >
+      <div style="background-color: dodgerblue; width: 100px">100px</div>
+      <div style="background-color: lightcoral; width: 100px">100px</div>
+      <div style="background-color: rgb(170, 228, 150); width: 100px">
+        100px
+      </div>
+      
+    </div>
+
+    <div
+      style="
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+        height: 70px;
+        justify-content: space-between; /* horizonal : center end start */
+        align-items: stretch; /* vertical: start end center stretch */
+      "
+    >
+      <div style="background-color: dodgerblue; width: 100px">100px</div>
+      <div style="background-color: lightcoral; width: 100px">100px</div>
+      <div style="background-color: rgb(170, 228, 150); width: 100px">
+        100px
+      </div>
+      
+    </div>
+
+  </body>
+</html>
